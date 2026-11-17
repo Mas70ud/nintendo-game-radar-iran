@@ -1,0 +1,92 @@
+
+[2026-11-17T13:03:20.306237] rc=0
+STDOUT:
+[westgamestore_nintendo] 0 بازی پیدا شد؛ 0 کارت جدید ثبت شد.
+[westgamestore_nintendo] خطا: https://westgamestore.ir/بازی-ps4-xbox/بازی-nintendo-switch: 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+[westgamestore_nintendo] خطا: https://westgamestore.ir/بازی-ps4-xbox/بازی-گیم-دسته-دوم-کارکرده-ps4-xbox-one: 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+
+
+[2026-11-17T13:21:35.984219] rc=0
+STDOUT:
+[westgamestore_nintendo] 0 بازی بررسی شد؛ 0 جدید، 0 به‌روزرسانی شد.
+[westgamestore_nintendo] خطا: https://westgamestore.ir/بازی-ps4-xbox/بازی-nintendo-switch: 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+[westgamestore_nintendo] خطا: https://westgamestore.ir/بازی-ps4-xbox/بازی-گیم-دسته-دوم-کارکرده-ps4-xbox-one: 'ascii' codec can't encode characters in position 5-8: ordinal not in range(128)
+
+
+[2026-11-17T13:27:30.388600] rc=0
+STDOUT:
+[westgamestore_nintendo] 78 بازی بررسی شد؛ 0 جدید، 0 به‌روزرسانی شد.
+
+
+[2026-11-17T13:31:19.965826] TIMEOUT after 120s
+
+[2026-11-17T15:06:53.961772] rc=0
+STDOUT:
+[westgamestore_nintendo] 78 بازی بررسی شد؛ 0 جدید، 0 به‌روزرسانی شد.
+
+
+[2026-11-17T15:12:05.305240] rc=0
+STDOUT:
+[westgamestore_nintendo] 78 بازی بررسی شد؛ 0 جدید، 0 به‌روزرسانی شد.
+
+
+[2026-11-17T15:15:53.739996] rc=0
+STDOUT:
+[westgamestore_nintendo] 78 بازی بررسی شد؛ 0 جدید، 0 به‌روزرسانی شد.
+
+
+[2026-11-17T15:28:39.137773] rc=0
+STDOUT:
+[westgamestore_nintendo] 78 بازی بررسی شد؛ 0 جدید، 0 به‌روزرسانی شد.
+
+
+[2026-11-17T15:33:33.424985] rc=0
+STDOUT:
+[westgamestore_nintendo] 78 بازی بررسی شد؛ 0 جدید، 0 به‌روزرسانی شد.
+
+
+[2026-11-17T16:37:39.082865] rc=0
+STDOUT:
+[westgamestore_new] 80 games scanned; 0 new, 0 updated.
+[westgamestore_secondhand] No Nintendo Switch games found on this category page.
+
+
+[2026-11-17T16:51:58.818974] rc=3221225786
+
+[2026-11-17T16:51:58.827216] rc=3221225786
+
+[2026-11-17T20:45:46.016313] rc=0
+STDOUT:
+[westgamestore_new] 80 games scanned; 0 new, 0 updated.
+[westgamestore_secondhand] No Nintendo Switch games found on this category page.
+
+
+[2026-11-17T20:45:54.496787] rc=0
+STDOUT:
+[westgamestore_new] 80 games scanned; 0 new, 0 updated.
+[westgamestore_secondhand] No Nintendo Switch games found on this category page.
+
+
+[2026-11-17T21:05:44.118668] rc=0
+STDOUT:
+[westgamestore_new] 80 games scanned; 0 new, 0 updated.
+[westgamestore_secondhand] No Nintendo Switch games found on this category page.
+
+
+[2026-11-17T21:15:54.206016] rc=0
+STDOUT:
+[westgamestore_new] 80 games scanned across 7 page(s); 0 new, 0 updated.
+[westgamestore_secondhand] Scan completed: 11 page(s), 0 Nintendo Switch games listed.
+
+
+[2026-11-17T21:33:33.070987] rc=0
+STDOUT:
+[westgamestore_new] 80 games scanned across 7 page(s); 0 new, 0 updated.
+[westgamestore_secondhand] Scan completed: 11 page(s), 0 Nintendo Switch games listed.
+
+
+[2026-11-17T22:30:09.746468] rc=0
+STDOUT:
+[westgamestore_new] 80 games scanned across 7 page(s); 0 new, 0 updated.
+[westgamestore_secondhand] Scan completed: 11 page(s), 0 Nintendo Switch games listed.
+

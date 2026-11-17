@@ -1,0 +1,149 @@
+
+[2026-11-17T16:03:56.567643] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T16:14:15.461702] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T16:28:28.029154] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T16:33:11.821515] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T16:47:00.845920] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T16:47:26.872987] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T17:02:02.258084] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T17:12:34.458888] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T20:34:18.954272] rc=1
+STDERR:
+Traceback (most recent call last):
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\dreamkala.py", line 135, in <module>
+    main()
+    ~~~~^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\dreamkala.py", line 125, in main
+    _, is_new, changed = db.upsert_item({"source": SOURCE, **item})
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\db.py", line 199, in upsert_item
+    conn.execute(
+    ~~~~~~~~~~~~^
+        "UPDATE items SET title = ?, text = ?, link = ?, timestamp = ?, condition = ?, in_stock = ?, platform = ?, image_url = ? WHERE id = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (title, text, link, ts, condition, in_stock, platform, image_url, row["id"]),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: database is locked
+
+
+[2026-11-17T20:35:00.306436] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T20:36:57.863170] rc=1
+STDERR:
+Traceback (most recent call last):
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\dreamkala.py", line 135, in <module>
+    main()
+    ~~~~^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\dreamkala.py", line 125, in main
+    _, is_new, changed = db.upsert_item({"source": SOURCE, **item})
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\db.py", line 199, in upsert_item
+    conn.execute(
+    ~~~~~~~~~~~~^
+        "UPDATE items SET title = ?, text = ?, link = ?, timestamp = ?, condition = ?, in_stock = ?, platform = ?, image_url = ? WHERE id = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (title, text, link, ts, condition, in_stock, platform, image_url, row["id"]),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: database is locked
+
+
+[2026-11-17T20:37:33.712704] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T20:47:50.486471] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T20:51:37.081771] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T20:57:20.619132] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T21:07:37.687515] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T21:19:47.308338] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T21:22:57.816286] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T21:24:44.709357] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T21:26:16.572367] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T21:45:30.787182] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T21:56:17.152037] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+
+
+[2026-11-17T22:04:07.425012] rc=1
+
+[2026-11-17T22:27:59.500176] rc=0
+STDOUT:
+[dreamkala_nintendo] 220 games scanned; 87 available, 0 new, 0 updated.
+

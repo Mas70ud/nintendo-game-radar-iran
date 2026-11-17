@@ -1,0 +1,84 @@
+
+[2026-11-17T17:05:25.189032] rc=0
+STDOUT:
+[pspro_nintendo] Switch2 new: 186 scanned.
+[pspro_nintendo] Switch1 used: 241 scanned.
+[pspro_nintendo] Switch2 used: 32 scanned.
+[pspro_nintendo] 459 games scanned; 173 available, 0 new, 2 updated.
+
+
+[2026-11-17T20:42:24.084628] rc=1
+STDOUT:
+[pspro_nintendo] Switch2 new: 185 scanned.
+[pspro_nintendo] Switch1 used: 241 scanned.
+[pspro_nintendo] Switch2 used: 33 scanned.
+
+STDERR:
+Traceback (most recent call last):
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\pspro.py", line 139, in <module>
+    main()
+    ~~~~^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\pspro.py", line 130, in main
+    _, is_new, changed = db.upsert_item({"source": SOURCE, **item})
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\db.py", line 199, in upsert_item
+    conn.execute(
+    ~~~~~~~~~~~~^
+        "UPDATE items SET title = ?, text = ?, link = ?, timestamp = ?, condition = ?, in_stock = ?, platform = ?, image_url = ? WHERE id = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (title, text, link, ts, condition, in_stock, platform, image_url, row["id"]),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: database is locked
+
+
+[2026-11-17T20:42:46.604884] rc=0
+STDOUT:
+[pspro_nintendo] Switch2 new: 185 scanned.
+[pspro_nintendo] Switch1 used: 241 scanned.
+[pspro_nintendo] Switch2 used: 33 scanned.
+[pspro_nintendo] 459 games scanned; 172 available, 0 new, 4 updated.
+
+
+[2026-11-17T20:56:01.553704] rc=0
+STDOUT:
+[pspro_nintendo] Switch2 new: 185 scanned.
+[pspro_nintendo] Switch1 used: 241 scanned.
+[pspro_nintendo] Switch2 used: 33 scanned.
+[pspro_nintendo] 459 games scanned; 172 available, 0 new, 2 updated.
+
+
+[2026-11-17T21:02:22.115697] TIMEOUT after 120s
+
+[2026-11-17T21:12:41.869607] rc=0
+STDOUT:
+[pspro_nintendo] Switch2 new: 185 scanned.
+[pspro_nintendo] Switch1 used: 241 scanned.
+[pspro_nintendo] Switch2 used: 33 scanned.
+[pspro_nintendo] 459 games scanned; 172 available, 0 new, 2 updated.
+
+
+[2026-11-17T21:30:45.749375] rc=0
+STDOUT:
+[pspro_nintendo] Switch2 new: 185 scanned.
+[pspro_nintendo] Switch1 used: 241 scanned.
+[pspro_nintendo] Switch2 used: 33 scanned.
+[pspro_nintendo] 459 games scanned; 172 available, 0 new, 2 updated.
+
+
+[2026-11-17T22:00:28.337111] rc=0
+STDOUT:
+[pspro_nintendo] Switch2 new: 185 scanned.
+[pspro_nintendo] Switch1 used: 241 scanned.
+[pspro_nintendo] Switch2 used: 33 scanned.
+[pspro_nintendo] 459 games scanned; 172 available, 0 new, 2 updated.
+
+
+[2026-11-17T22:28:56.796235] rc=0
+STDOUT:
+[pspro_nintendo] Switch2 new: 185 scanned.
+[pspro_nintendo] Switch1 used: 241 scanned.
+[pspro_nintendo] Switch2 used: 33 scanned.
+[pspro_nintendo] 459 games scanned; 172 available, 0 new, 2 updated.
+

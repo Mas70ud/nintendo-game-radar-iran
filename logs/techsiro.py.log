@@ -1,0 +1,59 @@
+
+[2026-11-17T16:37:03.484624] rc=0
+STDOUT:
+[techsiro_nintendo_new] 469 games scanned; 151 available, 0 new, 0 updated.
+[techsiro_nintendo_secondhand] 89 games scanned; 6 available, 0 new, 0 updated.
+
+
+[2026-11-17T16:51:37.465762] rc=1
+STDERR:
+Traceback (most recent call last):
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\techsiro.py", line 178, in <module>
+    main()
+    ~~~~^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\techsiro.py", line 171, in main
+    save_products(NEW_SOURCE, new_products)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\scripts\techsiro.py", line 147, in save_products
+    _, is_new, changed = db.upsert_item({"source": source, **item})
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\Agent_Workspace\Nintendo_Notifier\db.py", line 199, in upsert_item
+    conn.execute(
+    ~~~~~~~~~~~~^
+        "UPDATE items SET title = ?, text = ?, link = ?, timestamp = ?, condition = ?, in_stock = ?, platform = ?, image_url = ? WHERE id = ?",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (title, text, link, ts, condition, in_stock, platform, image_url, row["id"]),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: database is locked
+
+
+[2026-11-17T16:51:57.591151] TIMEOUT after 120s
+
+[2026-11-17T17:06:18.228555] rc=3221225786
+
+[2026-11-17T20:45:02.351090] TIMEOUT after 120s
+
+[2026-11-17T20:45:11.240265] TIMEOUT after 120s
+
+[2026-11-17T21:05:09.295186] TIMEOUT after 120s
+
+[2026-11-17T21:15:16.207805] TIMEOUT after 120s
+
+[2026-11-17T21:32:55.481862] rc=0
+STDOUT:
+[techsiro_nintendo] Switch1 new: 372 games scanned.
+[techsiro_nintendo] Switch2 new: 97 games scanned.
+[techsiro_nintendo] Second-hand used: 89 games scanned.
+[techsiro_nintendo_new] 469 games scanned; 151 available, 0 new, 0 updated.
+[techsiro_nintendo_secondhand] 89 games scanned; 6 available, 0 new, 0 updated.
+
+
+[2026-11-17T22:29:42.109473] rc=1
+STDERR:
+[techsiro] No Nintendo games collected.
+Switch1: The read operation timed out
+Switch2: <urlopen error _ssl.c:1064: The handshake operation timed out>
+Second-hand: The read operation timed out
+
