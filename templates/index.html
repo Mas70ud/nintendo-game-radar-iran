@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NS - Radar</title>
+  <meta name="theme-color" content="#fcf9f2" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="NS - Radar" />
+  <link rel="icon" type="image/svg+xml" href="/static/nintendo-favicon.svg?v=1" />
+  <link rel="alternate icon" type="image/png" href="/static/icon-192.png" />
+  <link rel="stylesheet" href="/static/css/style.css?v=28" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-title">
+      <h1>🎮 Nintendo Swith Game Radar</h1>
+      <div id="status" class="status" aria-live="polite"></div>
+    </div>
+    <div class="actions">
+      <button id="btn-last-update" type="button" title="Show changes from the last update">Last Update</button>
+      <button id="btn-run" type="button" title="Run now">▶ Run now</button>
+      <div id="run-progress" class="run-progress" hidden aria-live="polite" role="button" tabindex="0" title="Show latest update log" aria-haspopup="dialog">
+        <div id="run-progress-ring" class="run-progress-ring" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <span id="run-progress-percent">0%</span>
+        </div>
+        <span id="run-progress-label" class="run-progress-label"></span>
+      </div>
+      <button id="btn-theme" type="button" title="Switch to dark mode" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </header>
+
+  <dialog id="source-picker" class="source-picker-dialog" aria-labelledby="source-picker-title">
+    <div class="source-picker-heading">
+      <h2 id="source-picker-title">Choose websites to update</h2>
+      <button id="source-picker-close" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="source-picker-body">
+      <p>Selected websites will be updated and shown in the game list.</p>
+      <button id="source-select-all" class="source-select-all" type="button">Select all</button>
+      <div id="source-options" class="source-options"></div>
+      <div id="source-picker-error" class="source-picker-error" role="alert"></div>
+      <div class="source-picker-actions">
+        <button id="source-run-cancel" type="button">Cancel</button>
+        <button id="source-run-start" type="button">Update selected</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="run-log-dialog" class="run-log-dialog" aria-labelledby="run-log-title">
+    <div class="run-log-heading">
+      <h2 id="run-log-title">Latest update log</h2>
+      <button id="run-log-close" type="button" aria-label="Close">×</button>
+    </div>
+    <div id="run-log-content" class="run-log-content">Loading…</div>
+  </dialog>
+
+  <dialog id="last-update-dialog" class="last-update-dialog" aria-labelledby="last-update-title">
+    <div class="run-log-heading">
+      <div>
+        <h2 id="last-update-title">Last Update</h2>
+        <div id="last-update-date" class="last-update-date"></div>
+      </div>
+      <button id="last-update-close" type="button" aria-label="Close">×</button>
+    </div>
+    <div id="last-update-content" class="last-update-content">Loading…</div>
+  </dialog>
+
+  <section class="filters">
+    <div class="filter-options" aria-label="Filter games">
+      <button class="filter-chip" type="button" data-filter="new" aria-pressed="false">New</button>
+      <button class="filter-chip" type="button" data-filter="used" aria-pressed="false">Second-hand</button>
+      <button class="filter-chip" type="button" data-filter="Switch1" aria-pressed="false">Switch1</button>
+      <button class="filter-chip" type="button" data-filter="Switch2" aria-pressed="false">Switch2</button>
+    </div>
+    <input
+      type="search"
+      id="inp-search"
+      class="search"
+      placeholder="Search in title"
+      autocomplete="off"
+    />
+  </section>
+
+  <main id="timeline" class="timeline">
+    <!-- Items injected by JS -->
+  </main>
+
+  <script src="/static/js/app.js?v=28"></script>
+</body>
+</html>

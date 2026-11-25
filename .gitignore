@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Runtime data and logs (the bundled starter database is already included)
+logs/
+data/image_cache/*
+!data/image_cache/.gitkeep
+data/*.db-shm
+data/*.db-wal
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
